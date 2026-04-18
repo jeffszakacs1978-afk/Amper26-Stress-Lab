@@ -11,8 +11,8 @@ import pandas as pd
 
       # --- "IES-Sentinel-Bijective Unified Architecture" ---
       # ---version: "1.0" ---
-  description: "Configurable parameters for semantic boundary protection and flux estimation."
-  simulation_targets:
+      # ---description: "Configurable parameters for semantic boundary protection and flux estimation." ---
+      # ---simulation_targets:
     - prompt_injection (direct/indirect)
     - contextual_masquerading
     - gradient_timed_drift
