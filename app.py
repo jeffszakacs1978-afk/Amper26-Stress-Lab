@@ -7,7 +7,7 @@ def get_signal_energy(text):
     values = [(ord(c.upper()) - 64) for c in text if c.isalpha()]
     return values if values else [0]
 
-def lyapunov_check(signal, decay=0.8):
+def lyapunov_check(signal, decay=1.0):
     threshold = 30.0
     energy_path = []
     current_energy = 0
