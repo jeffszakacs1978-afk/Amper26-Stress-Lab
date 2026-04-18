@@ -9,7 +9,7 @@ import pandas as pd
 #                assurance, bijective state grounding, and zero-delimiter protocol.
 # ==============================================================================
 
-  name: "IES-Sentinel-Bijective Unified Architecture"
+      # --- "IES-Sentinel-Bijective Unified Architecture" ---
   version: "1.0"
   description: "Configurable parameters for semantic boundary protection and flux estimation."
   simulation_targets:
