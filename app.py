@@ -8,7 +8,7 @@ def get_signal_energy(text):
     return values if values else [0]
 
 def lyapunov_check(signal, decay=0.1):
-    threshold = 50.0
+    threshold = 30.0
     energy_path = []
     current_energy = 0
     neutralized = False
