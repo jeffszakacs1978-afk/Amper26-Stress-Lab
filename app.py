@@ -13,10 +13,10 @@ import pandas as pd
       # ---version: "1.0" ---
       # ---description: "Configurable parameters for semantic boundary protection and flux estimation." ---
       # ---simulation_targets:
-    - prompt_injection (direct/indirect)
-    - contextual_masquerading
-    - gradient_timed_drift
-    - polite_saboteur
+    # - prompt_injection (direct/indirect)
+    # - contextual_masquerading
+    # - gradient_timed_drift
+    # - polite_saboteur
 
 # ------------------------------------------------------------------------------
 # PART 1: INPUT ENVELOPE SENTINEL (IES) - Canonicalization & Segmentation
