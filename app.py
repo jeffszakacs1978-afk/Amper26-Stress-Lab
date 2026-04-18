@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 
-    CORE AMPER 26 LOGIC 
+# --- CORE AMPER 26 LOGIC --- 
 def get_signal_energy(text):
 values = [(ord(c.upper()) - 64) for c in text if c.isalpha()]
 return values if values else [0]
