@@ -1,3 +1,3 @@
-streamlit
-numpy
+streamlit>=1.28
+unicodedata2  # optional, built-in unicodedata works fine
 pandas
