@@ -17,7 +17,7 @@ def lyapunov_check(signal, decay=1.0):
         if current_energy > threshold:
             neutralized = True
             current_energy = 0 
-        current_energy *= np.exp(-decay * 0.1)
+        current_energy *= np.exp(-decay * 1.0)
         energy_path.append(current_energy)
     return energy_path, neutralized
 
