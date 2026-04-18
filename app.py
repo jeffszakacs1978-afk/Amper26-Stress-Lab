@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 
---- CORE AMPER 26 LOGIC ---
+    CORE AMPER 26 LOGIC 
 def get_signal_energy(text):
 values = [(ord(c.upper()) - 64) for c in text if c.isalpha()]
 return values if values else [0]
@@ -21,7 +21,7 @@ current_energy *= np.exp(-decay * 0.1)
 energy_path.append(current_energy)
 return energy_path, neutralized
 
---- UI ---
+       UI
 st.title("🛡️ Amper 26: Boundary Integrity Lab")
 user_input = st.text_area("Attack Vector Input:", placeholder="Try to crash the state space...")
 if st.button("Execute Stress Test") and user_input:
