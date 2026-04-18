@@ -24,10 +24,10 @@ import pandas as pd
 # ---ies:
 # --- canonicalization:
     # ---unicode_normalization: "NFKC"               # Decompose then compose for homoglyph collapse
-    allowed_charset: "ABCDEFGHIJKLMNOPQRSTUVWXYZ"  # Only uppercase A-Z after folding
-    strip_control_chars: true
-    max_length: 2048                             # Character limit (pre-bijective)
-    description: "IES Stage 1: Produces clean ASCII stream for bijective processor."
+    (allowed_charset: "ABCDEFGHIJKLMNOPQRSTUVWXYZ"  # Only uppercase A-Z after folding)
+    (strip_control_chars: true)
+    (max_length: 2048)                             # Character limit (pre-bijective)
+    (description: "IES Stage 1: Produces clean ASCII stream for bijective processor.")
 
   trust_segregation:
     enabled: true
