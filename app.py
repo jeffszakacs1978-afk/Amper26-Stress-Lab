@@ -21,9 +21,9 @@ import pandas as pd
 # ------------------------------------------------------------------------------
 # PART 1: INPUT ENVELOPE SENTINEL (IES) - Canonicalization & Segmentation
 # ------------------------------------------------------------------------------
-ies:
-  canonicalization:
-    unicode_normalization: "NFKC"               # Decompose then compose for homoglyph collapse
+# ---ies:
+# --- canonicalization:
+    # ---unicode_normalization: "NFKC"               # Decompose then compose for homoglyph collapse
     allowed_charset: "ABCDEFGHIJKLMNOPQRSTUVWXYZ"  # Only uppercase A-Z after folding
     strip_control_chars: true
     max_length: 2048                             # Character limit (pre-bijective)
