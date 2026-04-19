@@ -125,7 +125,17 @@ if user_input:
         st.session_state.unsafe = True
     elif st.session_state.unsafe and s < reset:
         st.session_state.unsafe = False
-
+   if st.checkbox("Show state history"):
+    if len(st.session_state.history) > 1:
+        import pandas as pd
+        # Convert deque to list explicitly to avoid index errors
+        data = list(st.session_state.history)
+        df = pd.DataFrame(data, columns=['timestamp', 's'])
+        # Normalize time to start at 0
+        df['elapsed'] = df['timestamp'] - df['timestamp'].iloc[0]
+        st.line_chart(df.set_index('elapsed')['s'])
+    else:
+        st.info("Gathering more data points for the graph...")
     hysteresis_state = "🔴 UNSAFE" if st.session_state.unsafe else "🟢 SAFE"
     st.write(f"**Hysteresis State:** {hysteresis_state} (trigger={trigger:,}, reset={reset:,})")
 
