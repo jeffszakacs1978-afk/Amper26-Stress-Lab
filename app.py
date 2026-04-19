@@ -297,5 +297,4 @@ else:
         df = pd.DataFrame(st.session_state.history, columns=['timestamp', 's'])
         df['elapsed'] = df['timestamp'] - df['timestamp'].iloc[0]
         st.line_chart(df.set_index('elapsed')['s'])
-else:
     st.info("Enter some text to begin analysis.")   st.info("Enter some text to begin analysis.")
